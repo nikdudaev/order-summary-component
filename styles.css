@@ -17,8 +17,6 @@ body {
 	margin: 0 auto;
 	width: 100vh;
 	height: 100%;
-	/* max-height: 100%;
-	max-width: 100%; */
 	background: no-repeat top /100% 50% hsl(225, 100%, 94%) url("./images/pattern-background-desktop.svg");
 }
 
@@ -85,16 +83,12 @@ span {
 	font-size: 14px;
 	color: hsl(245, 75%, 52%);
 	font-weight: 700;
+	margin-right: 10px;
 }
 
 .summary {
 	margin-top: 15%;
 	margin-bottom: 5%;
-}
-
-.summary p {
-	line-height: 1.5;
-	letter-spacing: 0.7px;
 }
 
 .action {
@@ -122,4 +116,24 @@ span {
 	color: hsl(224, 23%, 55%);
 	font-weight: 700;
 	margin-top: 5px;
+}
+
+.tarif {
+	margin: 10px;
+}
+
+@media (width: 375px) {
+	body {
+		width: 100%;
+		background: no-repeat top /100% 50% hsl(225, 100%, 94%) url("./images/pattern-background-mobile.svg");
+	}
+
+	main {
+		width: 90%;
+		height: 65%;
+	}
+
+	span {
+		font-size: 14px;
+	}
 }
